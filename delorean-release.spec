@@ -16,6 +16,12 @@ Requires:       yum-utils
 %description
 This package configures both the delorean and rdo-management-delorean repositories
 
+%prep
+# intentionally blank
+
+%build
+# intentionally blank
+
 %pre
 # Install repo file for Delorean master packages
 # Pin to an older repo for now because newer openstack-keystone requires a
@@ -29,6 +35,9 @@ export DELOREAN_RHEL7_REPO=${DELOREAN_RHEL7_REPO:-"http://trunk-mgt.rdoproject.o
 curl -o /etc/yum.repos.d/delorean-rdo-management.repo $DELOREAN_RHEL7_REPO
 # We can't have 2 yum repos called delorean though, so we must rename this one
 sed -i 's/delorean/delorean-rdo-management/' /etc/yum.repos.d/delorean-rdo-management.repo
+
+%install
+# intentionally blank
 
 %post
 # delorean-rdo-management should default to priority=1

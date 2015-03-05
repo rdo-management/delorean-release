@@ -44,5 +44,7 @@ sed -i 's/delorean/delorean-rdo-management/' /etc/yum.repos.d/delorean-rdo-manag
 sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 %changelog
-* Thur Mar 5 2015 Ryan Brady <rbrady@redhat.com> - delorean-release-kilo-1
-- Creating Package
+* Thu Mar 05 2015 Ryan Brady <rbrady@redhat.com> kilo-1
+- new package built with tito
+
+

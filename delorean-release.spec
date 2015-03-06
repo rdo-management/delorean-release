@@ -28,6 +28,9 @@ This package configures both the delorean and rdo-management-delorean repositori
 %install
 # intentionally blank
 
+%files
+# intentionally blank
+
 %post
 # Install repo file for Delorean master packages
 # Pin to an older repo for now because newer openstack-keystone requires a
@@ -44,6 +47,8 @@ sed -i 's/delorean/delorean-rdo-management/' /etc/yum.repos.d/delorean-rdo-manag
 
 # delorean-rdo-management should default to priority=1
 sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
+
+
 
 %changelog
 * Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.3-1

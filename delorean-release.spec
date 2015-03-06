@@ -7,7 +7,6 @@ Group:          System Environment/Base
 License:        Apache2
 
 URL:            http://repos.fedorapeople.org/repos/openstack/
-Source0:        delorean-release.repo
 
 BuildArch:      noarch
 

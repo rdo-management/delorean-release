@@ -1,5 +1,5 @@
 Name:           delorean-release
-Version:        kilo.0.2
+Version:        kilo.0.3
 Release:        1
 Summary:        Delorean and RDO Management Delorean repository configuration
 
@@ -45,6 +45,9 @@ sed -i 's/delorean/delorean-rdo-management/' /etc/yum.repos.d/delorean-rdo-manag
 sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 %changelog
+* Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.3-1
+- changed the section where the repo files are downloaded. (rbrady@redhat.com)
+
 * Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.2-1
 - removed uneeded Source tag. (rbrady@redhat.com)
 

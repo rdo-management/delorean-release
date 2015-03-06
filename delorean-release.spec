@@ -1,5 +1,5 @@
 Name:           delorean-release
-Version:        kilo
+Version:        kilo.0.2
 Release:        1
 Summary:        Delorean and RDO Management Delorean repository configuration
 
@@ -43,6 +43,9 @@ sed -i 's/delorean/delorean-rdo-management/' /etc/yum.repos.d/delorean-rdo-manag
 sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 %changelog
+* Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.2-1
+- removed uneeded Source tag. (rbrady@redhat.com)
+
 * Thu Mar 05 2015 Ryan Brady <rbrady@redhat.com> kilo-1
 - new package built with tito
 

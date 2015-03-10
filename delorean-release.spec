@@ -6,7 +6,7 @@ Summary:        Delorean and RDO Management Delorean repository configuration
 Group:          System Environment/Base
 License:        Apache2
 
-Source0:        delorean-repo.spec
+
 URL:            https://github.com/rdo-management/delorean-release
 
 BuildArch:      noarch

@@ -30,7 +30,7 @@ This package configures both the delorean and rdo-management-delorean repositori
 install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/delorean-release.repo
 
 %files
-# intentionally blank
+%{_sysconfdir}/yum.repos.d/*.repo
 
 %post
 # Install repo file for Delorean master packages

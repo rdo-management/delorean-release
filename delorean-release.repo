@@ -1,0 +1,6 @@
+[delorean-rdo-management]
+name=delorean-rdo-management
+baseurl=http://trunk-mgt.rdoproject.org/repos/current
+enabled=1
+gpgcheck=0
+priority=1

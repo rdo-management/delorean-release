@@ -1,5 +1,5 @@
 Name:           delorean-release
-Version:        kilo.0.4
+Version:        kilo.0.5
 Release:        1
 Summary:        Delorean and RDO Management Delorean repository configuration
 
@@ -8,6 +8,7 @@ License:        Apache2
 
 
 URL:            https://github.com/rdo-management/delorean-release
+Source0:        delorean-release.repo
 
 BuildArch:      noarch
 
@@ -26,7 +27,7 @@ This package configures both the delorean and rdo-management-delorean repositori
 # intentionally blank
 
 %install
-# intentionally blank
+install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/delorean-release.repo
 
 %files
 # intentionally blank
@@ -38,19 +39,16 @@ This package configures both the delorean and rdo-management-delorean repositori
 export DELOREAN_REPO=${DELOREAN_REPO:-"http://104.130.230.24/centos70/05/d8/05d8a6b82bf1f16c064bbee84d95c88b73030fae_3ea5fe35/delorean.repo"}
 curl -o /etc/yum.repos.d/delorean.repo $DELOREAN_REPO
 
-# Install repo file for Delorean el7 midstream packages built from
-# rdo-management.
-export DELOREAN_RHEL7_REPO=${DELOREAN_RHEL7_REPO:-"http://trunk-mgt.rdoproject.org/repos/current/delorean.repo"}
-curl -o /etc/yum.repos.d/delorean-rdo-management.repo $DELOREAN_RHEL7_REPO
-# We can't have 2 yum repos called delorean though, so we must rename this one
-sed -i 's/delorean/delorean-rdo-management/' /etc/yum.repos.d/delorean-rdo-management.repo
-
 # delorean-rdo-management should default to priority=1
 sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 
-
 %changelog
+* Wed Mar 11 2015 Ryan Brady <rbrady@redhat.com> kilo.0.5-1
+- Added repo file for delorean-rdo-management to be more similar to rdo-release
+  (rbrady@redhat.com)
+- additional changes (rbrady@redhat.com)
+
 * Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.4-1
 - Added %%files section (rbrady@redhat.com)
 - Added back source line (rbrady@redhat.com)

@@ -34,34 +34,6 @@ sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 
 %changelog
-* Thu Mar 12 2015 Ryan Brady <rbrady@redhat.com>
-- changed install to %%{__install} (rbrady@redhat.com)
 
-* Thu Mar 12 2015 Ryan Brady <rbrady@redhat.com> kilo-1
-- added additional changes to get a successful build (rbrady@redhat.com)
-
-* Thu Mar 12 2015 Ryan Brady <rbrady@redhat.com>
-- added additional changes to get a successful build (rbrady@redhat.com)
-
-* Wed Mar 11 2015 Ryan Brady <rbrady@redhat.com> kilo.0.6-1
-- added files to spec (rbrady@redhat.com)
-
-* Wed Mar 11 2015 Ryan Brady <rbrady@redhat.com> kilo.0.5-1
-- Added repo file for delorean-rdo-management to be more similar to rdo-release
-  (rbrady@redhat.com)
-- additional changes (rbrady@redhat.com)
-
-* Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.4-1
-- Added %%files section (rbrady@redhat.com)
-- Added back source line (rbrady@redhat.com)
-
-* Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.3-1
-- changed the section where the repo files are downloaded. (rbrady@redhat.com)
-
-* Fri Mar 06 2015 Ryan Brady <rbrady@redhat.com> kilo.0.2-1
-- removed uneeded Source tag. (rbrady@redhat.com)
-
-* Thu Mar 05 2015 Ryan Brady <rbrady@redhat.com> kilo-1
-- new package built with tito
 
 

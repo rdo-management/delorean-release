@@ -1,6 +1,6 @@
 Name:           delorean-release
 Version:        kilo
-Release:        1
+Release:        0
 Summary:        Delorean and RDO Management Delorean repository configuration
 
 Group:          System Environment/Base

@@ -1,6 +1,6 @@
 Name:           delorean-release
 Version:        kilo
-Release:        0
+Release:        1
 Summary:        Delorean and RDO Management Delorean repository configuration
 
 Group:          System Environment/Base
@@ -34,6 +34,9 @@ sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 
 %changelog
+* Thu Mar 12 2015 Ryan Brady <rbrady@redhat.com> kilo-1
+- new package built with tito
+
 
 
 

@@ -34,6 +34,9 @@ sudo sed -i "s/priority=1/priority=2/" /etc/yum.repos.d/delorean.repo
 
 
 %changelog
+* Thu Mar 12 2015 Ryan Brady <rbrady@redhat.com>
+- changed install to %%{__install} (rbrady@redhat.com)
+
 * Thu Mar 12 2015 Ryan Brady <rbrady@redhat.com> kilo-1
 - added additional changes to get a successful build (rbrady@redhat.com)
 

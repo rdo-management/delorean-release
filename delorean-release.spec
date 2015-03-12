@@ -17,7 +17,7 @@ Requires:       yum-utils
 This package configures both the delorean and rdo-management-delorean repositories
 
 %install
-install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/delorean-release.repo
+%{__install} -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/delorean-release.repo
 
 %files
 %{_sysconfdir}/yum.repos.d/*.repo

@@ -1,11 +1,10 @@
 Name:           delorean-release
-Version:        kilo.0.6
-Release:        1
+Version:        kilo
+Release:        0
 Summary:        Delorean and RDO Management Delorean repository configuration
 
 Group:          System Environment/Base
 License:        Apache2
-
 
 URL:            https://github.com/rdo-management/delorean-release
 Source0:        delorean-release.repo
@@ -16,15 +15,6 @@ Requires:       yum-utils
 
 %description
 This package configures both the delorean and rdo-management-delorean repositories
-
-%prep
-# intentionally blank
-
-%build
-# intentionally blank
-
-%pre
-# intentionally blank
 
 %install
 install -p -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/delorean-release.repo

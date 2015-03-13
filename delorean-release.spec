@@ -7,7 +7,7 @@ Group:          System Environment/Base
 License:        Apache2
 
 URL:            https://github.com/rdo-management/delorean-release
-Source0:        delorean-release.repo
+Source:         %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 

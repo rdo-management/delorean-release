@@ -1,6 +1,20 @@
-[delorean-rdo-management]
+[delorean-rdo-managemer]
 name=delorean-rdo-management
-baseurl=http://trunk-mgt.rdoproject.org/repos/current
+baseurl=http://trunk-mgt.rdoproject.org/repos/snapshots/latest
 enabled=1
+gpgcheck=0
+priority=1
+
+[delorean-rdo-manager-ci]
+name=Latest Passed CI Manager repository
+baseurl=http://trunk-mgt.rdoproject.org/repos/current-passed-ci
+enabled=0
+gpgcheck=0
+priority=1
+
+[delorean-rdo-manager-experimental]
+name=Latest untested packages for RDO Manager
+baseurl=http://trunk-mgt.rdoproject.org/repos/current
+enabled=0
 gpgcheck=0
 priority=1
